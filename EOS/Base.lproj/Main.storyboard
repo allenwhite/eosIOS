@@ -32,7 +32,7 @@
                                 </constraints>
                                 <state key="normal" title="Login" image="login_button.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="iH8-hR-Fca"/>
+                                    <action selector="consentTapped:" destination="mO2-jB-tdl" eventType="touchUpInside" id="5ko-3C-YLW"/>
                                 </connections>
                             </button>
                         </subviews>

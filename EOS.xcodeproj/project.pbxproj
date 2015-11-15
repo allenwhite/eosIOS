@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		57A0D908AE93DB1759C1E878 /* libPods-EOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF5595717133CF54467FA8B /* libPods-EOS.a */; };
+		5B4A8DBD1BF8DF00007E4DF4 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A8DBA1BF8DF00007E4DF4 /* SurveyTask.swift */; };
+		5B4A8DBE1BF8DF00007E4DF4 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A8DBB1BF8DF00007E4DF4 /* ConsentTask.swift */; };
+		5B4A8DBF1BF8DF00007E4DF4 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A8DBC1BF8DF00007E4DF4 /* ConsentDocument.swift */; };
 		5B7AF15A1BF87A0D00814309 /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7AF1591BF87A0D00814309 /* loginView.swift */; };
-		5B7AF1AB1BF87BC200814309 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7AF1A81BF87BAF00814309 /* ResearchKit.framework */; };
-		5B7AF1AC1BF87BC200814309 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7AF1A81BF87BAF00814309 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B7AF1C11BF87CC700814309 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7AF1BF1BF87CC700814309 /* ConsentDocument.swift */; };
-		5B7AF1C21BF87CC700814309 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7AF1C01BF87CC700814309 /* ConsentTask.swift */; };
-		5B7AF1C41BF87CCF00814309 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7AF1C31BF87CCF00814309 /* SurveyTask.swift */; };
 		5B7AF1C81BF8891B00814309 /* field_image_logo_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7AF1C71BF8891B00814309 /* field_image_logo_overlay.png */; };
 		5B7AF1CC1BF8908F00814309 /* logo_ios.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B7AF1CB1BF8908F00814309 /* logo_ios.jpg */; };
 		5B7AF1CE1BF891BC00814309 /* login_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B7AF1CD1BF891BC00814309 /* login_button.png */; };
@@ -38,26 +36,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5B7AF1A71BF87BAF00814309 /* PBXContainerItemProxy */ = {
+		5B4A8DC61BF8DF09007E4DF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5B7AF1A11BF87BAF00814309 /* ResearchKit.xcodeproj */;
+			containerPortal = 5B4A8DC01BF8DF09007E4DF4 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B183A5951A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
-		5B7AF1A91BF87BAF00814309 /* PBXContainerItemProxy */ = {
+		5B4A8DC81BF8DF09007E4DF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5B7AF1A11BF87BAF00814309 /* ResearchKit.xcodeproj */;
+			containerPortal = 5B4A8DC01BF8DF09007E4DF4 /* ResearchKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
 			remoteInfo = ResearchKitTests;
-		};
-		5B7AF1AD1BF87BC200814309 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B7AF1A11BF87BAF00814309 /* ResearchKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B183A4731A8535D100C76870;
-			remoteInfo = ResearchKit;
 		};
 		5B7AF1DF1BF8944C00814309 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -90,17 +81,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5B7AF1AF1BF87BC300814309 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5B7AF1AC1BF87BC200814309 /* ResearchKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5B7AF1F31BF8944C00814309 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,12 +108,12 @@
 /* Begin PBXFileReference section */
 		098033458CF87B9AB18B525C /* Pods-EOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOS/Pods-EOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4CF5595717133CF54467FA8B /* libPods-EOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B4A8DBA1BF8DF00007E4DF4 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
+		5B4A8DBB1BF8DF00007E4DF4 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		5B4A8DBC1BF8DF00007E4DF4 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		5B4A8DC01BF8DF09007E4DF4 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		5B7AF1581BF87A0C00814309 /* EOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "EOS-Bridging-Header.h"; path = "EOS/EOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B7AF1591BF87A0D00814309 /* loginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
-		5B7AF1A11BF87BAF00814309 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../Downloads/ResearchKit-master 2/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
-		5B7AF1BF1BF87CC700814309 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentDocument.swift; path = "../../Downloads/Camelot-Final/Camelot/ConsentDocument.swift"; sourceTree = "<group>"; };
-		5B7AF1C01BF87CC700814309 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsentTask.swift; path = "../../Downloads/Camelot-Final/Camelot/ConsentTask.swift"; sourceTree = "<group>"; };
-		5B7AF1C31BF87CCF00814309 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyTask.swift; path = "../../Downloads/Camelot-Final/Camelot/SurveyTask.swift"; sourceTree = "<group>"; };
 		5B7AF1C71BF8891B00814309 /* field_image_logo_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = field_image_logo_overlay.png; path = ../../Downloads/field_image_logo_overlay.png; sourceTree = "<group>"; };
 		5B7AF1CB1BF8908F00814309 /* logo_ios.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo_ios.jpg; path = ../../Downloads/logo_ios.jpg; sourceTree = "<group>"; };
 		5B7AF1CD1BF891BC00814309 /* login_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_button.png; path = ../../Downloads/login_button.png; sourceTree = "<group>"; };
@@ -182,7 +162,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7AF1AB1BF87BC200814309 /* ResearchKit.framework in Frameworks */,
 				57A0D908AE93DB1759C1E878 /* libPods-EOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,21 +192,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B4A8DC11BF8DF09007E4DF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B4A8DC71BF8DF09007E4DF4 /* ResearchKit.framework */,
+				5B4A8DC91BF8DF09007E4DF4 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5B7AF1571BF8797500814309 /* BridgingHeader */ = {
 			isa = PBXGroup;
 			children = (
 				5B7AF1581BF87A0C00814309 /* EOS-Bridging-Header.h */,
 			);
 			name = BridgingHeader;
-			sourceTree = "<group>";
-		};
-		5B7AF1A21BF87BAF00814309 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5B7AF1A81BF87BAF00814309 /* ResearchKit.framework */,
-				5B7AF1AA1BF87BAF00814309 /* ResearchKitTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5B7AF1D21BF8944B00814309 /* eosWatchExtension */ = {
@@ -264,7 +243,10 @@
 		9F49C8141BF7DF590004B9D9 = {
 			isa = PBXGroup;
 			children = (
-				5B7AF1A11BF87BAF00814309 /* ResearchKit.xcodeproj */,
+				5B4A8DC01BF8DF09007E4DF4 /* ResearchKit.xcodeproj */,
+				5B4A8DBA1BF8DF00007E4DF4 /* SurveyTask.swift */,
+				5B4A8DBB1BF8DF00007E4DF4 /* ConsentTask.swift */,
+				5B4A8DBC1BF8DF00007E4DF4 /* ConsentDocument.swift */,
 				5B7AF1571BF8797500814309 /* BridgingHeader */,
 				9FFD27D91BF7E0C700F4F7EF /* Podfile */,
 				9F49C81F1BF7DF5A0004B9D9 /* EOS */,
@@ -293,9 +275,6 @@
 		9F49C81F1BF7DF5A0004B9D9 /* EOS */ = {
 			isa = PBXGroup;
 			children = (
-				5B7AF1BF1BF87CC700814309 /* ConsentDocument.swift */,
-				5B7AF1C01BF87CC700814309 /* ConsentTask.swift */,
-				5B7AF1C31BF87CCF00814309 /* SurveyTask.swift */,
 				9F49C8231BF7DF5A0004B9D9 /* AppDelegate.h */,
 				9F49C8241BF7DF5A0004B9D9 /* AppDelegate.m */,
 				9FE3995A1BF8166300ED09CC /* Models */,
@@ -420,13 +399,11 @@
 				9F49C81B1BF7DF5A0004B9D9 /* Resources */,
 				385F85DCC2491104FDD5FB8E /* Embed Pods Frameworks */,
 				16CD9183E6CF4699CDA16E45 /* Copy Pods Resources */,
-				5B7AF1AF1BF87BC300814309 /* Embed Frameworks */,
 				5B7AF1F71BF8944C00814309 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B7AF1AE1BF87BC200814309 /* PBXTargetDependency */,
 				5B7AF1EE1BF8944C00814309 /* PBXTargetDependency */,
 			);
 			name = EOS;
@@ -513,8 +490,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5B7AF1A21BF87BAF00814309 /* Products */;
-					ProjectRef = 5B7AF1A11BF87BAF00814309 /* ResearchKit.xcodeproj */;
+					ProductGroup = 5B4A8DC11BF8DF09007E4DF4 /* Products */;
+					ProjectRef = 5B4A8DC01BF8DF09007E4DF4 /* ResearchKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -529,18 +506,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5B7AF1A81BF87BAF00814309 /* ResearchKit.framework */ = {
+		5B4A8DC71BF8DF09007E4DF4 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ResearchKit.framework;
-			remoteRef = 5B7AF1A71BF87BAF00814309 /* PBXContainerItemProxy */;
+			remoteRef = 5B4A8DC61BF8DF09007E4DF4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5B7AF1AA1BF87BAF00814309 /* ResearchKitTests.xctest */ = {
+		5B4A8DC91BF8DF09007E4DF4 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ResearchKitTests.xctest;
-			remoteRef = 5B7AF1A91BF87BAF00814309 /* PBXContainerItemProxy */;
+			remoteRef = 5B4A8DC81BF8DF09007E4DF4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -657,10 +634,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE399591BF8165300ED09CC /* AFAPIclient.m in Sources */,
-				5B7AF1C11BF87CC700814309 /* ConsentDocument.swift in Sources */,
+				5B4A8DBF1BF8DF00007E4DF4 /* ConsentDocument.swift in Sources */,
 				9FFD27DD1BF7E4A600F4F7EF /* GraphViewController.m in Sources */,
-				5B7AF1C21BF87CC700814309 /* ConsentTask.swift in Sources */,
-				5B7AF1C41BF87CCF00814309 /* SurveyTask.swift in Sources */,
+				5B4A8DBD1BF8DF00007E4DF4 /* SurveyTask.swift in Sources */,
+				5B4A8DBE1BF8DF00007E4DF4 /* ConsentTask.swift in Sources */,
 				5B7AF15A1BF87A0D00814309 /* loginView.swift in Sources */,
 				9F49C8251BF7DF5A0004B9D9 /* AppDelegate.m in Sources */,
 				9F49C8221BF7DF5A0004B9D9 /* main.m in Sources */,
@@ -686,11 +663,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5B7AF1AE1BF87BC200814309 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ResearchKit;
-			targetProxy = 5B7AF1AD1BF87BC200814309 /* PBXContainerItemProxy */;
-		};
 		5B7AF1E01BF8944C00814309 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5B7AF1DC1BF8944C00814309 /* eosWatchExtension Extension */;
@@ -897,7 +869,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = EOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alpal.EOS;
@@ -913,7 +884,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = EOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alpal.EOS;

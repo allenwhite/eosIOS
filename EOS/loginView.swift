@@ -17,12 +17,12 @@ class loginView: UIViewController, ORKTaskViewControllerDelegate, WCSessionDeleg
     
     var session: WCSession!
     
-   /* @IBAction func consentTapped(sender : AnyObject) {
+    @IBAction func consentTapped(sender : AnyObject) {
         let taskViewController = ORKTaskViewController(task: ConsentTask, taskRunUUID: nil)
         taskViewController.delegate = self
         presentViewController(taskViewController, animated: true, completion: nil)
     }
-*/
+
     
     @IBAction func surveyTapped(sender : AnyObject) {
         let taskViewController = ORKTaskViewController(task: SurveyTask, taskRunUUID: nil)

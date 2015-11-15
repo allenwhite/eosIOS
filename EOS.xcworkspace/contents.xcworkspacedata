@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Downloads/ResearchKit-master 3/ResearchKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:EOS.xcodeproj">
    </FileRef>
    <FileRef
